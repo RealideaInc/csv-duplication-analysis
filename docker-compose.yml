@@ -1,0 +1,11 @@
+version: "3"
+services:
+  go:
+    build: ./
+    tty: true
+    volumes:
+      - type: bind
+        source: "./"
+        target: "/src/app"
+    working_dir: /src/app/app
+    command: go run main.go
