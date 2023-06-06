@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	file, err := os.Open("file/KEN_ALL2.CSV")
+	file, err := os.Open("file/ファイル名を入れてください")
 	if err != nil {
 		fmt.Println("ファイルを開くのに失敗しました:", err)
 		return
